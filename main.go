@@ -49,7 +49,7 @@ func main() {
 	ebiten.MaximizeWindow()
 	ebiten.SetTPS(MaxTps)
 	app := &Application{
-		simulation: *simulation.NewSimulation(CanvasWidth, CanvasHeight),
+		simulation: *simulation.NewSimulation(CanvasWidth, CanvasHeight, SimStepsPerUpdate),
 	}
 	InitGrid(app.simulation.Grid)
 	err := ebiten.RunGame(app)

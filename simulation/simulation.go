@@ -5,11 +5,12 @@ import (
 )
 
 type Simulation struct {
+	StepsPerUpdate int
 	Grid *XelGrid
 }
 
 func (sim *Simulation) Update() {
-	for range 10 {
+	for range sim.StepsPerUpdate {
 		// get all available xels with energy != 0
 		available_positions := []Vector2{}
 		for i, xel := range sim.Grid.Xels {
@@ -25,8 +26,9 @@ func (sim *Simulation) Update() {
 	}
 }
 
-func NewSimulation(width int, height int) *Simulation {
+func NewSimulation(width int, height int, stepsPerUpdate int) *Simulation {
 	return &Simulation{
 		Grid: NewXelGrid(width, height),
+		StepsPerUpdate: stepsPerUpdate,
 	}
 }
