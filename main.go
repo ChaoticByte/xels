@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/hajimehoshi/ebiten/v2"
 
-	"github.com/ChaoticByte/xels/simulation"
+	"remotebranch.eu/ChaoticByte/xels/simulation"
 )
 
 

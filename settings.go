@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ChaoticByte/xels/simulation"
+import "remotebranch.eu/ChaoticByte/xels/simulation"
 
 const CanvasWidth = 200
 const CanvasHeight = 200

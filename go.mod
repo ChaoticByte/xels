@@ -1,4 +1,4 @@
-module github.com/ChaoticByte/xels
+module remotebranch.eu/ChaoticByte/xels
 
 go 1.24.5
 
